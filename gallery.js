@@ -16,6 +16,9 @@ const caption = document.getElementById('caption');
 function updateLightbox(index) {
     currentIndex = index;
     const data = imageData[currentIndex];
+    lightboxImage.style.animation = 'none';
+    lightboxImage.offsetHeight;
+    lightboxImage.style.animation = null;
     lightboxImage.src = data.src;
     caption.textContent = data.alt;
     lightbox.classList.add('active');
